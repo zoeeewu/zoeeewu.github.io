@@ -13,7 +13,9 @@ home_featured = true
 project_status = "2026.05 - Present"
 role = "Research Assistant"
 figures = [
-  { src = "/images/projects/bon/main-figure.png", alt = "Overview graphic for Botulinum Neurotoxin Modulation of Ankle Impedance During Post-Stroke Walking", caption = "Ankle Impedance Model" }
+  { src = "/images/projects/bon/main-figure.png", alt = "Overview graphic for Botulinum Neurotoxin Modulation of Ankle Impedance During Post-Stroke Walking", caption = "Ankle Impedance Model" },
+  { src = "/images/projects/bon/1.png", alt = "Vicon motion capture data processing", caption = "Vicon motion capture data processing" },
+  { src = "/images/projects/bon/2.JPG", alt = "Gait data collection during walking", caption = "Gait data collection during walking" }
 ]
 methods = ["Vicon  motion capture", "Human subject experience", "Joint torque"]
 +++

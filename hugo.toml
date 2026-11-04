@@ -1,4 +1,4 @@
-baseURL = "https://zoeeewu.github.io/academic-website/"
+baseURL = "https://zoeeewu.github.io/"
 languageCode = "en-us"
 title = "Academic Research Portfolio"
 disableKinds = ["taxonomy", "term"]
@@ -7,7 +7,7 @@ ignoreLogs = ["warning-home-page-is-leaf-bundle", "warning-deprecated-path"]
 [params]
   author = "ZOE WU"
   description = "Personal academic research portfolio"
-  email = "lachesism46@gmail.com"
+  email = "zoewu@umich.edu"
   cv = "/cv/CV-placeholder.pdf"
 
 [markup]

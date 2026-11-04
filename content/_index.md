@@ -38,8 +38,8 @@ title = "Well-rounded Development Award Programme 2021/2022 – Silver Award"
 date = "2022.09"
 
 [[social]]
-label = "Email: lachesism46@gmail.com"
-url = "mailto:lachesism46@gmail.com"
+label = "Email: zoewu@umich.edu"
+url = "mailto:zoewu@umich.edu"
 
 [[social]]
 label = "LinkedIn"
