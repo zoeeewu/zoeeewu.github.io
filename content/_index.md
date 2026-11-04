@@ -8,14 +8,16 @@ title = "Research focus"
 content = "Neuromuscular Biomechanics, Quantitative Imaging, Skeletal Muscle"
 
 [[education]]
-title = "University of Michigan – Ann Arbor, MI, USA"
-details = """2025.08 – 2027.06 (Expected)
-Master of Biomedical Engineering (GPA: 3.95 / 4)"""
+school = "University of Michigan"
+degree = "Master of Science in Biomedical Engineering"
+meta = "Ann Arbor, MI, USA · GPA: 3.95/4.00"
+date = "Aug 2025 – Jun 2027 (Expected)"
 
 [[education]]
-title = "University of Macau, Macau SAR, China"
-details = """2021.08 – 2025.06
-Bachelor of Science in Biomedical Sciences (GPA: 3.69 / 4)"""
+school = "University of Macau"
+degree = "Bachelor of Science in Biomedical Sciences"
+meta = "Macau SAR, China · GPA: 3.69/4.00"
+date = "Aug 2021 – Jun 2025"
 
 [[awards]]
 title = "UM Dean’s Honour List"

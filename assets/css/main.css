@@ -203,6 +203,11 @@ h3 {
   text-decoration: none;
 }
 
+.cv-link {
+  justify-self: start;
+  border-bottom: 0;
+}
+
 .snapshot {
   padding: 22px;
   border: 1px solid var(--line);
@@ -293,6 +298,53 @@ h3 {
 
 .mini-item p {
   margin: 4px 0 0;
+}
+
+.education-item {
+  max-width: 780px;
+  padding-left: 18px;
+  border-left: 3px solid var(--line);
+}
+
+.education-item + .education-item {
+  margin-top: 6px;
+}
+
+.education-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 20px;
+  line-height: 1.4;
+}
+
+.education-school {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.education-date {
+  color: var(--muted);
+  font-size: 0.94rem;
+  white-space: nowrap;
+}
+
+.education-degree,
+.education-meta {
+  margin: 0;
+}
+
+.education-degree {
+  margin-top: 6px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.education-meta {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.5;
 }
 
 .research-more {
@@ -906,5 +958,14 @@ figcaption {
   .accordion summary {
     min-height: 64px;
     font-size: 1.2rem;
+  }
+
+  .education-heading {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .education-date {
+    white-space: normal;
   }
 }

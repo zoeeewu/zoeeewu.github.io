@@ -8,7 +8,7 @@ ignoreLogs = ["warning-home-page-is-leaf-bundle", "warning-deprecated-path"]
   author = "ZOE WU"
   description = "Personal academic research portfolio"
   email = "zoewu@umich.edu"
-  cv = "/cv/CV-placeholder.pdf"
+  cv = "/cv/CV_Xiuyi(Zoe)%20Wu.pdf"
 
 [markup]
   [markup.goldmark]
