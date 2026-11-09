@@ -7,6 +7,8 @@ draft = false
 weight = 30
 project_status = "2026.01 - 2026.04"
 role = "Team Course Project"
+advisor_label = "Course Instructor"
+advisor_names = ["Prof. Jingwen Hu"]
 figures = [
   { src = "/images/projects/occup/main-figure.png", alt = "Overview graphic for Occupational Biomechanics Modeling With OpenSim and 3DSSPP", caption = "Biomechanical modeling of squat and stoop lifting and the effects of task parameters on lumbar loading." }
 ]

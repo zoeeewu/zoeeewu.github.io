@@ -71,6 +71,12 @@
               <dd>{{ . }}</dd>
             </div>
           {{ end }}
+          {{ with .Params.advisor_names }}
+            <div>
+              <dt>{{ $.Params.advisor_label }}</dt>
+              <dd>{{ delimit . " and " }}</dd>
+            </div>
+          {{ end }}
           {{ with .Params.methods }}
             <div>
               <dt>Tags</dt>

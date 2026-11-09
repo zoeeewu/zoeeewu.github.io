@@ -1,9 +1,11 @@
 {{ define "main" }}
-<section class="home-hero">
+<section class="home-hero anchor-section">
   <div class="shell home-grid">
     <div class="hero-copy">
-      <h1>{{ .Params.name | default site.Params.author }}</h1>
-      <p class="intro">{{ .Params.intro }}</p>
+      <h1 id="home">{{ .Params.name | default site.Params.author }}</h1>
+      {{ with .Params.intro }}
+        <div class="intro">{{ . | markdownify }}</div>
+      {{ end }}
       <div class="social-links" aria-label="Contact and social links">
         {{ range .Params.social }}
           <a href="{{ .url }}">{{ .label }}</a>
@@ -18,15 +20,6 @@
 </section>
 
 <section class="shell home-panels" aria-label="Profile overview">
-  {{ $projects := slice }}
-  {{ range (where site.RegularPages "Params.home_featured" true).ByWeight }}
-    {{ $projects = $projects | append (printf "<div class=\"mini-item\"><a href=\"%s\">%s</a></div>" .RelPermalink (.Title | htmlEscape)) }}
-  {{ end }}
-  {{ with site.GetPage "/projects" }}
-    {{ $projects = $projects | append (printf "<a class=\"research-more\" href=\"%s\">Explore more research projects &rarr;</a>" .RelPermalink) }}
-  {{ end }}
-  {{ partial "accordion.html" (dict "title" "Research Experience" "content" (delimit $projects "")) }}
-
   {{ $education := slice }}
   {{ range .Params.education }}
     {{ $education = $education | append (printf "<div class=\"education-item\"><div class=\"education-heading\"><strong class=\"education-school\">%s</strong><span class=\"education-date\">%s</span></div><p class=\"education-degree\">%s</p><p class=\"education-meta\">%s</p></div>" (.school | htmlEscape) (.date | htmlEscape) (.degree | htmlEscape) (.meta | htmlEscape)) }}
@@ -42,4 +35,19 @@
 
   {{ partial "accordion.html" (dict "title" "CV" "content" (printf "<a class=\"text-link cv-link\" href=\"%s\">Open CV (Click)</a>" site.Params.cv)) }}
 </section>
+
+{{ with site.GetPage "/projects" }}
+  <section class="single-page-section research-section" aria-labelledby="research">
+    <div class="shell">
+      <h2 id="research" class="single-page-section-heading">Research Experience &amp; Projects</h2>
+    </div>
+    {{ partial "project-list.html" . }}
+  </section>
+{{ end }}
+
+{{ with site.Data.my_lens_images }}
+  <section class="shell about-page single-page-section" aria-labelledby="about">
+    {{ partial "my-lens-section.html" (dict "images" . "headingID" "about" "headingClass" "single-page-section-heading") }}
+  </section>
+{{ end }}
 {{ end }}

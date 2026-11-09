@@ -12,6 +12,8 @@ weight = 20
 home_featured = true
 project_status = "2026.05 - Present"
 role = "Volunteer Researcher"
+advisor_label = "Advisor"
+advisor_names = ["Prof. Jingwen Hu"]
 figures = [
   { src = "/images/projects/lower_extremity/main-figure.png", alt = "Overview graphic for Population-Specific Modeling of Lower-Extremity Muscle Morphology", caption = "CT-derived muscle segmentations were processed through a MATLAB pipeline to identify maximum cross-sectional area, which was then modeled against anthropometric characteristics." },
   { src = "/images/projects/lower_extremity/1_TM.png", alt = "Lower-extremity tissue morphology visualization", caption = "Tissue morphology visualization from the modeling workflow." }

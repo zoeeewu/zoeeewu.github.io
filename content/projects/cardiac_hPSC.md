@@ -11,6 +11,8 @@ draft = false
 weight = 50
 home_featured = true
 project_status = "2024.03 - 2025.06"
+advisor_label = "Advisors"
+advisor_names = ["Dr. Weiwei Liu", "Prof. Guokai Chen"]
 figures = [
   { src = "/images/projects/cardiac_hpsc/main-figure.png?v=e65a3053c3bacce1", alt = "Overview graphic for Small-Molecule Control of Early Cardiac Differentiation From hESCs", caption = "Differentiation workflow and characterization of passaged cardiomyocytes." },
   { src = "/images/projects/cardiac_hpsc/IMG_1793.mov", alt = "Cardiac differentiation cell beating video", caption = "Spontaneous beating of Day 10 cardiomyocytes, visible as rhythmic wave-like contractions." }

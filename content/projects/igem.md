@@ -16,6 +16,8 @@ weight = 60
 home_featured = true
 project_status = "2023.01 - 2023.10"
 role = "Wet Lab Leader"
+advisor_label = "Faculty Advisors"
+advisor_names = ["Prof. Leo Lee", "Prof. Gary Huang"]
 figures = [
   { src = "/images/projects/igem/main-figure.png", alt = "Overview graphic for Engineered Probiotic Strategy for Gluten Degradation in the Intestine", caption = "Engineered cp19k-mediated intestinal adhesion and NO-responsive therapeutic release system." },
   { src = "/images/projects/igem/1_CD.png", alt = "Cyclodextrin-related iGEM project figure", caption = "Celiac disease is triggered by gluten-derived peptides that resist normal gut digestion. Prolyl endopeptidases can further degrade these peptides and reduce immune response." },

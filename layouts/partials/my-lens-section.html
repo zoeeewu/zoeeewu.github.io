@@ -1,0 +1,4 @@
+<section class="about-section" aria-labelledby="{{ .headingID }}">
+  <h2 id="{{ .headingID }}"{{ with .headingClass }} class="{{ . }}"{{ end }}>My Lens</h2>
+  {{ partial "my-lens-gallery.html" .images }}
+</section>

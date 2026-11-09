@@ -1,11 +1,13 @@
 +++
 title = "Home"
-name = "ZOE WU"
-intro = "My primary interest is in engineering approaches to restore or augment mobility in people with muscle weakness and neuromuscular impairments through biomechanics and wearable assistive technologies. My earlier work in regeneration medicine of restoring muscle function and broad education experience shaped my interest across multiple scales."
+name = "Xiuyi (Zoe) Wu"
+intro = """I'm currently an M.S. student in Biomedical Engineering at the University of Michigan. My current research focuses on using machine learning to predict ankle kinematics and kinetics during walking to support the estimation of ankle mechanical impedance. My previous work explored the relationship between lower-limb muscle morphology and anthropometric characteristics, with an emphasis on predicting muscle size from readily available measurements.
+
+My long-term goal is to develop technologies and interventions that restore or augment mobility for people with lower-limb weakness or impaired balance, helping them move independently, safely, and naturally in everyday and outdoor environments."""
 
 [research_focus]
 title = "Research focus"
-content = "Neuromuscular Biomechanics, Quantitative Imaging, Skeletal Muscle"
+content = "Human Movement Biomechanics, Neuromechanics, Musculoskeletal Modeling, Motor Control & Balance, Rehabilitation Engineering, Wearable Robotics"
 
 [[education]]
 school = "University of Michigan"

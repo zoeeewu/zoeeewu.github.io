@@ -12,6 +12,8 @@ weight = 10
 home_featured = true
 project_status = "2026.05 - Present"
 role = "Research Intern"
+advisor_label = "Advisor"
+advisor_names = ["Prof. Elliott Rouse"]
 figures = [
   { src = "/images/projects/bon/main-figure.png", alt = "Overview graphic for Botulinum Neurotoxin Modulation of Ankle Impedance During Post-Stroke Walking", caption = "Ankle Impedance Model" },
   { src = "/images/projects/bon/1.png", alt = "Vicon motion capture data processing", caption = "Vicon motion capture data processing" },

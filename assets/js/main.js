@@ -4,6 +4,29 @@ document.querySelectorAll(".accordion").forEach((item) => {
   });
 });
 
+const siteHeader = document.querySelector(".site-header");
+const syncHeaderHeight = () => {
+  if (!siteHeader) return;
+  document.documentElement.style.setProperty("--header-height", `${siteHeader.offsetHeight}px`);
+};
+
+syncHeaderHeight();
+window.addEventListener("resize", syncHeaderHeight);
+
+document.querySelectorAll(".site-nav a[href*='#']").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const targetURL = new URL(link.href, window.location.href);
+    const targetID = targetURL.hash.slice(1);
+    const target = targetID ? document.getElementById(targetID) : null;
+
+    if (!target || targetURL.pathname !== window.location.pathname) return;
+
+    event.preventDefault();
+    window.history.pushState(null, "", targetURL.hash);
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});
+
 const resetVideo = (video) => {
   video.pause();
   video.currentTime = 0;

@@ -6,9 +6,10 @@ ignoreLogs = ["warning-home-page-is-leaf-bundle", "warning-deprecated-path"]
 
 [params]
   author = "ZOE WU"
+  nav_author = "XIUYI (ZOE) WU"
   description = "Personal academic research portfolio"
   email = "zoewu@umich.edu"
-  cv = "/cv/CV_Xiuyi(Zoe)%20Wu.pdf"
+  cv = "/cv/CV_Xiuyi%20(Zoe)%20Wu.pdf"
 
 [markup]
   [markup.goldmark]
@@ -18,13 +19,13 @@ ignoreLogs = ["warning-home-page-is-leaf-bundle", "warning-deprecated-path"]
 [menus]
   [[menus.main]]
     name = "Home"
-    pageRef = "/"
+    url = "/#home"
     weight = 10
   [[menus.main]]
     name = "Research"
-    pageRef = "/projects"
+    url = "/#research"
     weight = 20
   [[menus.main]]
     name = "About"
-    pageRef = "/about"
+    url = "/#about"
     weight = 30

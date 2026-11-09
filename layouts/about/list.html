@@ -8,10 +8,7 @@
 <article class="shell about-page">
   <div class="about-content">
     {{ with site.Data.my_lens_images }}
-      <section class="about-section" aria-labelledby="my-lens-title">
-        <h2 id="my-lens-title">My Lens</h2>
-        {{ partial "my-lens-gallery.html" . }}
-      </section>
+      {{ partial "my-lens-section.html" (dict "images" . "headingID" "my-lens-title") }}
     {{ end }}
 
     {{ $showPersonalNotes := false }}

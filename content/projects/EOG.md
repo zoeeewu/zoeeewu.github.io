@@ -11,6 +11,8 @@ draft = false
 weight = 40
 project_status = "2026.01 - 2026.04"
 role = "System Integration"
+advisor_label = "Course Instructor"
+advisor_names = ["Dr. Kathleen Panagis"]
 figures = [
   { src = "/images/projects/eog/main-figure.png", alt = "Overview graphic for EOG-Based Gaze-Directed Audio Control System", caption = "EOG-based gaze detection workflow with signal conditioning, LabVIEW classification, and measured system response time." },
   { src = "/images/projects/eog/1_Circuit.png", alt = "Circuit diagram for the EOG signal conditioning system", caption = "Signal-conditioning circuit used for EOG acquisition." },
